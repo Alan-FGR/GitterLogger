@@ -1,7 +1,8 @@
 import os
 import sys
 sys.path.insert(0, os.getcwd()+"/GitterPy")
-from gitterpy.client import GitterClient
+from GitterPy.gitterpy.client import GitterClient #TODO fix this for production, we go hacky for intellisense :P
+#from gitterpy.client import GitterClient #IMPORTANT! uncomment this if I forgot to uncomment before pushing
 from collections import OrderedDict
 import json
 from enum import Enum
@@ -64,3 +65,5 @@ print("finished with the result: "+str(grab()))
 print("dumping collected data")
 new_messages.update(hist)
 json.dump(new_messages, open("log.txt", 'w'))
+
+gtr.messages.send(room_name, "I just archived "+str(c)+" messages from this chat, they'll be available soon at: https://alan-fgr.github.io/AtomicGitterLog/")
