@@ -1,0 +1,3 @@
+[submodule "GitterPy"]
+	path = GitterPy
+	url = https://github.com/MichaelYusko/GitterPy.git
