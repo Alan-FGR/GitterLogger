@@ -11,7 +11,7 @@ from enum import Enum
 silent = False
 room_name = "AtomicGameEngine/AtomicGameEngine"
 max_messages = -1
-#//we use a clash counter cause gitter isn't exactly high quality :trollface: and returns many doubles
+#//we use a clash counter cause gitter isn't exactly high quality :trollface: and returns many duplicates
 clashes_to_abort = 5
 
 class result(Enum):
@@ -66,4 +66,4 @@ print("dumping collected data")
 new_messages.update(hist)
 json.dump(new_messages, open("log.txt", 'w'))
 
-gtr.messages.send(room_name, "I just archived "+str(c)+" messages from this chat, they'll be available soon at: https://alan-fgr.github.io/AtomicGitterLog/")
+gtr.messages.send(room_name, "I just archived another "+str(c)+" messages from this chat, they'll be available soon at: https://alan-fgr.github.io/AtomicGitterLog/")
