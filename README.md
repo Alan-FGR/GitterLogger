@@ -1,5 +1,6 @@
 # GitterLogger
-A Gitter Log Archiver in Py3k (Just Works™)
+A Gitter Log Archiver in Py3k (Just Works™).
+
 It works and is being used in production, but code is shit and needs to be revamped (especially globals), I haven't touched Python seriously in years so I'm not planning to do that anytime soon though.
 
 ### Credits
