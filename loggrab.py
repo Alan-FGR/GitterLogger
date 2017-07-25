@@ -66,4 +66,4 @@ print("dumping collected data")
 new_messages.update(hist)
 json.dump(new_messages, open("log.txt", 'w'))
 
-gtr.messages.send(room_name, "[ARCHIVE UPDATE] "+str(c)+" messages archived, they'll soon be available at: https://Alan-FGR.github.io/AtomicGitterLog/")
+gtr.messages.send(room_name, "[ARCHIVE UPDATE] "+str(c)+" messages archived, they'll soon be available at [alansearch.win](alansearch.win)")
